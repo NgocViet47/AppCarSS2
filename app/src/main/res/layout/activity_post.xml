@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_post"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:background="@color/colorBackground"
+    tools:context="com.example.mypc.appcarss2.activity.main.PostActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/cardListImg"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:text="Gallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnGalleryPost"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="Camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnCameraPost"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="50"
+                android:hint="Tiêu đề sản phẩm"
+                android:id="@+id/edtTitle"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:id="@+id/edtPrice"
+                android:hint="Giá" />
+
+            <Button
+                android:text="Nơi Giao Dịch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnAdress"
+                style="?android:attr/borderlessButtonStyle"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:text="Hãng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnMaker"
+                style="?android:attr/borderlessButtonStyle"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:text="Loại Xe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSpecies"
+                style="?android:attr/borderlessButtonStyle"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:text="Hộp Số"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnGear"
+                style="?android:attr/borderlessButtonStyle"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:text="Đời Xe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnAge"
+                style="?android:attr/borderlessButtonStyle"
+                android:textAlignment="viewStart" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Mô tả"
+                android:inputType="textMultiLine"
+                android:id="@+id/edtDecription" />
+
+            <Button
+                android:text="Đăng Bán"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnPost" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
